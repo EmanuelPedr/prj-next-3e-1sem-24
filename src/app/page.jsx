@@ -3,9 +3,10 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className="container">
-      <h1>Projeto NextJS</h1> 
-      <h1>mael</h1>
-    </div>
+    <div>
+      <h1>Home</h1>
+      <Link  href={"/exercicio"}>Exercicio</Link>
+    </div>  
+
   );
 }

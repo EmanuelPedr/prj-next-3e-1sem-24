@@ -18,7 +18,7 @@ export default function Home() {
       <Link  href={"/usuarios/listar"}><p className={styles.linkTemp}>Listar usuarios</p></Link>
       <Link  href={"/usuarios/login"}><p className={styles.linkTemp}>Login||</p></Link>
       <Link  href={"/usuarios/recsenha"}><p className={styles.linkTemp}>Recuperação de senha||</p></Link>    
-      <Link  href={"/inicial/telainicial"}><p className={styles.linkTemp}>telainicial</p></Link>    
+      <Link  href={"/telainicial"}><p className={styles.linkTemp}>telainicial||</p></Link>    
     </div>
   );
 }

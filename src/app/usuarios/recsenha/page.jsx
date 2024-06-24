@@ -2,6 +2,7 @@
 
 
 import React, { useState } from 'react';
+import styles from './page.module.css'
 
 function RecuperaçãoSenha() {
   const [nomeUsuario, setNomeUsuario] = useState('');
@@ -16,10 +17,11 @@ function RecuperaçãoSenha() {
   };
 
   return (
-    <div className="container">
+    <div className={styles.main}>
+    <div className={styles.container}>
       <h1>Recuperação Senha</h1>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="nomeUsuario">Nome de usuário:</label>
           <input
             type="text"
@@ -29,7 +31,7 @@ function RecuperaçãoSenha() {
             required
           />
         </div>
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="email">E-mail:</label>
           <input
             type="email"
@@ -39,7 +41,7 @@ function RecuperaçãoSenha() {
             required
           />
         </div>
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="senha">Senha:</label>
           <input
             type="password"
@@ -49,7 +51,7 @@ function RecuperaçãoSenha() {
             required
           />
         </div>
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="confirmarSenha">Confirmar Senha:</label>
           <input
             type="password"
@@ -61,6 +63,7 @@ function RecuperaçãoSenha() {
         </div>
         <button type="submit">Cadastrar Nova Senha</button>
       </form>
+    </div>
     </div>
   );
 }

@@ -1,46 +1,61 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 400px;
+  padding: 20px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #000000;
   border-radius: 5px;
   background-color: #f9f9f9; /* cor de fundo do container */
-  color: #333; /* cor das letras do container */
+  color: #333; /* corgb(31, 31, 31)etras do container */
 }
 
-.h1 {
+.container h1 {
   text-align: center;
   margin-bottom: 10px;
-  color: #d62727; /* cor das letras do título */
+  color: #d66d27; /* cor das letras do título */
 }
 
-.form-group {
+.formGroup {
   margin-bottom: 15px;
+  
+}
+.container form{
+  width: 70%;
 }
 
-.label {
+.container label {
   display: block;
   margin-bottom: 5px;
+  justify-content: space-between;
   color: #666; /* cor das letras dos labels */
 }
 
-.input {
+.container input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #e40a0a;
+  border: 1px solid #d66d27;
   border-radius: 3px;
   box-sizing: border-box;
   background-color: #fff; /* cor de fundo dos inputs */
   color: #333; /* cor das letras dos inputs */
 }
 
-.button {
-  background-color: #4CAF50;
-  color: rgb(184, 0, 0);
+.container button {
+  width: 100%;
   padding: 10px 20px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  background-color: #337ab7; /* cor de fundo do botão */
+  background-color: #d66d27; /* cor de fundo do botão */
   color: #fff; /* cor das letras do botão */
 }

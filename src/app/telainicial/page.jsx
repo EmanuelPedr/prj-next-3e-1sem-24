@@ -2,7 +2,7 @@
 
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../telainicial/page.module.css';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
@@ -35,14 +35,14 @@ export default function Home() {
         </div>
 
         <div className={styles.gallery}>
-          <Image src="/public/academia1.jpg" alt="Galeria 1" width={500} height={300} />
-          <Image src="/images/gallery2.jpg" alt="Galeria 2" width={500} height={300} />
-          <Image src="/images/gallery3.jpg" alt="Galeria 3" width={500} height={300} />
+        <Image src='/home/academia3.jpg' width={700} height={700}/>
+          <Image src='/home/academia2.jpg' width={700} height={700}/>
+          <Image src='/home/academia1.jpg' width={700} height={700}/>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        
+        Academia Iron Force
       </footer>
     </div>
   );

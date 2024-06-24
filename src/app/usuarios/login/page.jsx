@@ -2,6 +2,7 @@
 
 
 import React, { useState } from 'react';
+import styles from './page.module.css'
 
 function Login() {
   const [nomeUsuario, setNomeUsuario] = useState('');
@@ -14,10 +15,10 @@ function Login() {
   };
 
   return (
-    <div className="container">
+    <div className={styles.container}>
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="nomeUsuario">Nome de usuário:</label>
           <input
             type="text"
@@ -27,7 +28,7 @@ function Login() {
             required
           />
         </div>
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="senha">Senha:</label>
           <input
             type="password"

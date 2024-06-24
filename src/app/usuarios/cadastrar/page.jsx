@@ -22,6 +22,7 @@ const CadUsu = () => {
 
   return (
     <div className={styles.container}>
+      <h1>Cadastre-se</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Nome de usuário:</label>
         <input

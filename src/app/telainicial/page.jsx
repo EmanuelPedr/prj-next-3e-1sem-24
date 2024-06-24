@@ -15,17 +15,17 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Academia Corpus Quality
+          Academia Iron Force
         </h1>
 
         <p className={styles.description}>
-          Seja bem-vindo à Academia Corpus Quality!
+          Seja bem-vindo à Academia Iron Force!
         </p>
 
         <div className={styles.grid}>
           <a href="#" className={styles.card}>
             <h2>Sobre nós</h2>
-            <p>A Academia Corpus Quality é o lugar ideal para quem busca saúde e qualidade de vida. Nossas instalações modernas e equipamentos de última geração garantem uma experiência única para nossos clientes.</p>
+            <p>A Academia Iron Force é o lugar ideal para quem busca saúde e qualidade de vida. Nossas instalações modernas e equipamentos de última geração garantem uma experiência única para nossos clientes.</p>
           </a>
 
           <a href="#" className={styles.card}>
@@ -35,19 +35,14 @@ export default function Home() {
         </div>
 
         <div className={styles.gallery}>
-          <Image src="/images/gallery1.jpg" alt="Galeria 1" width={500} height={300} />
+          <Image src="/public/academia1.jpg" alt="Galeria 1" width={500} height={300} />
           <Image src="/images/gallery2.jpg" alt="Galeria 2" width={500} height={300} />
           <Image src="/images/gallery3.jpg" alt="Galeria 3" width={500} height={300} />
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <p>
-          Construído com{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </p>
+        
       </footer>
     </div>
   );
